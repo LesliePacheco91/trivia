@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trivia</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<div class="contenido">
+<h1 class="titulo">Trivia de licores</h1>
+	
+
+	<form method="POST" action="">
+		<h2 class="pregunta">Qué país hasta el 2013 consideraba a la cerveza como una bebida no alcohólica</h2>
+		<div class="grupos">
+			<label>Alemania</label>
+			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="alemania">
+		</div>
+		
+		<div class="grupos">
+			<label>Portugal</label>
+			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="portugal">
+		</div>
+		<div class="grupos">
+			<label>Rusia</label>
+			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="rusia">
+		</div>
+		<div id="resultado1"></div>
+		<br>
+
+		<h2 class="pregunta">¿Cuál es la cerveza más fuerte del mundo?</h2>
+
+		<div class="grupos">
+			<label>Tiger Venom</label>
+			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="TigerVenom">
+		</div>
+		<div class="grupos">
+			<label>Snake Venom</label>
+			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="SnakeVenom">
+		</div>
+		<div class="grupos">
+			<label>Snake Power</label>
+			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="SnakePower">
+		</div>
+
+		<div id="resultado2"></div>
+
+		<br>
+
+		<h2 class="pregunta">¿Es recomendable mezclar bebidas alcohólicas con bebidas energizantes?</h2>	
+
+		<div class="grupos">
+			<label>Si</label>
+			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="si">
+		</div>
+
+		<div class="grupos">
+			<label>No</label>
+			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="no">
+		</div>
+		<div id="resultado3"></div>
+		<br>
+	</form>
+	<button id = "verRes"  onclick="result1();" class="boton">Ver resultados</button>
+	<h1 id = "puntuacion" class="pregunta"></h1>
+	<a href="index.html"><h2>Volver</h2></a>
+</div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src= "vanilla.js"></script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trivia</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<div class="contenido">
+<h1 class="titulo">Trivia Mexicana</h1>
+	
+
+	<form method="POST" action="">
+		<h2 class="pregunta">Completa el refrán: "Ni tanto que queme al santo ni tanto que no lo..."</h2>
+		<div class="grupos">
+			<label>Ilumine</label>
+			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="Ilumine">
+		</div>
+		<div class="grupos">
+			<label>Alumnbre</label>
+			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="alumnbre">
+		</div>
+		<div class="grupos">
+			<label>Encienda</label>
+			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="Encienda">
+		</div>
+		<div id="resultado1"></div>
+		<br>
+
+		<h2 class="pregunta">¿Cuál de estos animales NO es mexicano?</h2>
+
+		<div class="grupos">
+			<label>Ajolote</label>
+			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="Ajolote">
+		</div>
+		<div class="grupos">
+			<label>Quetzal</label>
+			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="quetzal">
+		</div>
+		<div class="grupos">
+			<label>perro Xoloitzcuincle</label>
+			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="xoloitzcuincle">
+		</div>
+
+		<div id="resultado2"></div>
+
+		<br>
+
+		<h2 class="pregunta">¿Cuál de estos partidos de fútbol se conoce como "el clásico nacional"?</h2>	
+
+		<div class="grupos">
+			<label>America vz Pumas</label>
+			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="amePum">
+		</div>
+
+		<div class="grupos">
+			<label>Pumas vz Chivas</label>
+			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="pumChiv">
+		</div>
+
+		<div class="grupos">
+			<label>America vz Chivas</label>
+			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="ameChiv">
+		</div>
+		<div id="resultado3"></div>
+		<br>
+	</form>
+	<button id = "verRes"  onclick="result();" class="boton">Ver resultados</button>
+	<h1 id = "puntuacion" class="pregunta"></h1>
+	<a href="index.html"><h1>Volver</h1></a>
+</div>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src= "vanilla.js"></script>
