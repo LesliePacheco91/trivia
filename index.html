@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trivia</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src= "vanilla.js"></script>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="style.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 
-<div class="contenido">
-	<h1 class="pregunta">Bienvenido al juego de trivia</h1>
-	<p>Ingresa tu nombre y elige el tipo de trivia para jugar</p>
-	<form method="POST">
-		<input  style = "width: 40%; padding: 2%; margin: 9px; border-radius: 10px;" type="text" class="campoTexto" name="nombre" placeholder="Ingresa tu nombre" required>
+  </head>
+  <body>
+    <div class="app">
+      
 
-		<button class="boton"  type="submit" formaction="juegoMexicana.html">Trivia Mexicana</button>
-		<button class="boton" type="submit" formaction = "trivialicores.html">Trivia Sobre cervezas</button>
-	</form>
-</div>
-</body>
+    <div class="titulo">
+      
+      <h3 class = "aaa">
+        Bienvenido a
+      </h3>
+      <div class = "imagen" >
+         <img
+            src="https://norths.com.au/wp-content/uploads/2019/07/trivia-.jpg"
+            alt=""
+            width="60%" 
+        /> 
+      </div>
+     
+
+        
+     </div>
+  
+    <br />
+      <form>
+        <input class = "campoText" id ="nombre" type = "text" name = "usuario" placeholder="Ingresa tu nombre"  required>
+      
+        <h4> Elige que tema quieras jugar:</h4>
+        
+        <button class="boton" onclick="dato()" formaction = "triviaSeries.html" >
+            <img
+            src="https://play-lh.googleusercontent.com/e8rZvLmkuMR3phgOnD05cz86GpshUIUJI44wVO9QYyk8s2XNmxkp2jejuakGbAANjyG5=w300"
+            alt=""
+            width="50%"
+          /> 
+          <p>
+            Series
+          </p>
+        </button>
+        <button class="boton" onclick="dato()" formaction = "triviaMexico.html">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYph3MR0dKkw9q5b6-YEqU_AgYXdbPXODnfy8A8I1lFlmaoi67h5eUtJe6uQiEFKSaJo&usqp=CAU"
+            alt=""
+            width="50%"
+          /> 
+          <p>
+            México
+          </p>
+        </button>
+      </form>
+    <br>
+    </div>
+  </body>
+<script type="text/javascript" src= "script.js"></script>
+
+<script>
+	function dato(){
+
+		var nombre = document.getElementById("nombre").value;
+    
+
+		localStorage.setItem('test', nombre);
+	}
+  
+</script>
+
+
+	
+	
+
 </html>
