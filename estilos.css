@@ -1,62 +1,109 @@
-.contenido{
-
-	width:60%;
-	margin: auto;
-	text-align: center;
-	background-color: #fff;
-	padding: 2em;
-	border-radius: 3em;
+body {
+  background:#faec0c;
+  font-family: 'Carter One', cursive;
 }
-
-body{
-	background-color: #81dac6;
-}
-
-.boton{
-
-	background-color: #f5d48f;
-	border-color:#f5d48f ;
-	font-weight: bold;
-	color: #139f43;
-	font-size: 15px;
-	border-radius: 3em;
-	width: 40em;
-	height: 3em;
-	margin: 2%;
-
-}
-
-.pregunta{
-
-	color: #c3a3d1;
+.app {
+  background:#64088f;
+  border-radius: 10px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding:10px;
+  color: #ffffff;
 }
 
 .titulo{
-	color: #81dac6
+  background:#64088f;
+  padding:1px;
+  color: #ffffff;
+  text-shadow: 10px 5px 5px black;
 }
 
-.grupos{
-	color: #f08476;
-	font-weight: bold;
-	font-size: 25px;
-	width: 40%;
-	padding: 1%;
-	margin: auto;
+.grupo{
+  margin:auto;
+  width: 45%;
+  text-align: left;
 }
 
-.campoTexto{
-  width: 40%;
-  padding: 2%;
-  margin: 9px;
+.boton{
+  width: 12em;
+	height: 12em;
+  background:#ffffff;
   border-radius: 10px;
- }
+  font-weight: bold;
+  /*padding:10px;*/
+  margin:40px;
+  
+}
 
- #resultado1, #resultado2, #resultado3{
- 	font-size: 20px;
- }
+.botonTrivia{
+  width: 20em;
+  margin:40px;
+  padding:0;
+  background-image: url();
+}
 
- .boton a{
- 	text-decoration: none;
- 	color: #f08476;
- }
+.me{
+  color:#006847;
+}
 
+.xi{
+  color: #ffffff;
+}
+.co{
+  color:#e61127
+}
+
+.resultados{
+  color:#faec0c;
+  margin-top:1em;
+  
+}
+.campoText{
+  
+  width: 40em;
+  padding:10px;
+  border:6px #faec0c solid;
+  border-radius:10px;
+  height:2em;
+ color: #ffffff;
+  background:#64088f;
+  font-size:15px;
+  
+}
+
+#usuario{
+  
+  color:#faec0c;
+  font-weight: bold;
+}
+
+button p{
+  margin:0
+}
+
+.imagen{
+  width: 50%;
+  float:left;
+  
+}
+
+.aaa{
+  
+width: 40%;
+float: left;
+padding: 1em 0 1em 2em;
+font-size:50px;
+
+}
+
+a{
+  color: #faec0c;
+  font-size: 30px;
+}
+
+.subtitulo{
+  color:#faec0c;
+  text-shadow: 10px 5px 5px black;
+  
+}
