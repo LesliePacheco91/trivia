@@ -1,5 +1,5 @@
 #Una trivia es un tipo de juego, generalmente en el marco de un concurso, en el que se plantea una serie de preguntas cuyas respuestas deben ser elegidas entre diferentes opciones predeterminadas.
-en dicho repositorio contiene la descripción del desarrollo y funcionalidad del miniproyecto en el cual consiste en una trivia.
+En dicho repositorio contiene la descripción del desarrollo y funcionalidad del miniproyecto en el cual consiste en una trivia.
 
 
 En primera instancia se trabajó en la estructura y colores utilizando la herramienta figma.
