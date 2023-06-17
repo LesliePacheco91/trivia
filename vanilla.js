@@ -1,87 +1,133 @@
-function verCon(e){
+function validaMexico(){
+  
+  var valor1 = document.querySelector('input[type=radio][name=p1]:checked');
+  var valor2 = document.querySelector('input[type=radio][name=p2]:checked');
+  var valor3 = document.querySelector('input[type=radio][name=p3]:checked');
+  
+  var contador = 0; 
+  
+  if(valor1.value != null){
+    
+    document.getElementById("resultado1").innerHTML ="Respuesta: Francisco González Bocanegra y Jaime Nunó";
+    
+    if(valor1.value == 'Francisco González Bocanegra  y Jaime Nunó'){
 
-	alert("Valor "+e+" puntos");
+        document.getElementById("respuesta1").innerHTML = "Correcto";
+        document.getElementById("respuesta1").style.color = "rgb(69, 255, 66)";
+        contador = contador +1;
+
+    }else{
+
+        document.getElementById("respuesta1").innerHTML = "Incorrecto";
+        document.getElementById("respuesta1").style.color = "#fa0202";
+    }
+    
+    
+    
+  }
+  
+  
+  
+  
+  if(valor2.value != null){
+    
+    document.getElementById("resultado2").innerHTML ="Respuesta: Catrina";
+    
+    if(valor2.value == 'Catrina'){
+
+        document.getElementById("respuesta2").innerHTML = "Correcto";
+        document.getElementById("respuesta2").style.color = "rgb(69, 255, 66)";
+        contador = contador +1;
+
+    }else{
+        document.getElementById("respuesta2").innerHTML = "Incorrecto";
+        document.getElementById("respuesta2").style.color = "#fa0202";
+    }
+  }
+  
+  
+  if(valor3.value != null){
+    
+      document.getElementById("resultado3").innerHTML ="Respuesta: Quetzal";
+    
+     if(valor3.value == 'Quetzal'){
+    
+        document.getElementById("respuesta3").innerHTML = "Correcto";
+        document.getElementById("respuesta3").style.color = "rgb(69, 255, 66)";
+        contador = contador +1;
+
+    }else{
+        document.getElementById("respuesta3").innerHTML = "Incorrecto";
+        document.getElementById("respuesta3").style.color = "#fa0202";
+    }
+  }
+  
+  document.getElementById('puntuacion').innerHTML ="Tu puntuacion total es de: "+contador;
+  
+  
 }
 
-function result() {
 
-	  var respuesta1 = document.querySelector('input[type=radio][name=resp1]:checked');
-	  var respuesta2 = document.querySelector('input[type=radio][name=resp2]:checked');
-	  var respuesta3 = document.querySelector('input[type=radio][name=resp3]:checked');
+function validaSeries(){
 
-	  var contador = 0;
+  
+  var valor1 = document.querySelector('input[type=radio][name=p1]:checked');
+  var valor2 = document.querySelector('input[type=radio][name=p2]:checked');
+  var valor3 = document.querySelector('input[type=radio][name=p3]:checked');
+  
+  
+var contador = 0; 
+  
+  if(valor1.value != null){
+    
+    document.getElementById("resultado1").innerHTML ="Respuesta: Emilia Clarke";
+    
+    if(valor1.value == 'Emilia Clarke'){
+      
+      document.getElementById("respuesta1").innerHTML = "Correcto";
+      document.getElementById("respuesta1").style.color = "rgb(69, 255, 66)";
+      contador = contador +1;
 
-	if(respuesta1.value == "alumnbre" ){
-		document.getElementById("resultado1").innerHTML ="Correcto +10";
-		document.getElementById("resultado1").style.color = "#139f43";
-		contador = contador +10;
-	}else{
-		document.getElementById("resultado1").innerHTML ="Incorrecto es Alumnbre";
-		document.getElementById("resultado1").style.color = "red";
-	}
+      }else{
 
-	if(respuesta2.value == "quetzal"){
-		document.getElementById('resultado2').innerHTML = "Correcto +8";
-		document.getElementById("resultado2").style.color = "#139f43";
+          document.getElementById("respuesta1").innerHTML = "Incorrecto";
+          document.getElementById("respuesta1").style.color = "#fa0202";
+    }    
+  }
+  
+ if(valor2.value != null){
+  
+      document.getElementById("resultado2").innerHTML ="Respuesta: Janice";
 
-		contador = contador+8;
-	}else{
-		document.getElementById('resultado2').innerHTML = "Incorrecto es Quetzal";
-		document.getElementById("resultado2").style.color = "red";
-	}
+     if(valor2.value == 'Janice'){
 
-	if(respuesta3.value == "ameChiv"){
+       document.getElementById("respuesta2").innerHTML = "Correcto";
+       document.getElementById("respuesta2").style.color = "rgb(69, 255, 66)";
+       contador = contador +1;
 
-		document.getElementById('resultado3').innerHTML = "Correcto +5";
-		document.getElementById("resultado3").style.color = "#139f43";
+    }else{
+        document.getElementById("respuesta2").innerHTML = "Incorrecto";
+        document.getElementById("respuesta2").style.color = "#fa0202";
+    }
+  }
+  
+  if(valor3.value != null){
+    
+      document.getElementById("resultado3").innerHTML ="Respuesta: Coraline";
 
-		contador = contador + 5;
-	}else{
-		document.getElementById('resultado3').innerHTML = "Incorrecto es America vz Chivas";
-		document.getElementById("resultado3").style.color = "red";
-	}
+      if(valor3.value == 'Coraline'){
 
+          document.getElementById("respuesta3").innerHTML = "Correcto";
+          document.getElementById("respuesta3").style.color = "rgb(69, 255, 66)";
+          contador = contador +1;
 
-		document.getElementById('puntuacion').innerHTML ="Tu puntuacion total es de: "+contador;
-}
-
-function result1() {
-
-	  var respuesta1 = document.querySelector('input[type=radio][name=resp1]:checked');
-	  var respuesta2 = document.querySelector('input[type=radio][name=resp2]:checked');
-	  var respuesta3 = document.querySelector('input[type=radio][name=resp3]:checked');
-
-	  var contador = 0;
-
-	if(respuesta1.value == "rusia" ){
-		document.getElementById("resultado1").innerHTML ="Correcto +12";
-		document.getElementById("resultado1").style.color = "#139f43";
-		contador = contador +12;
-	}else{
-		document.getElementById("resultado1").innerHTML ="Incorrecto es Rusia";
-		document.getElementById("resultado1").style.color = "red";
-
-	}
-
-	if(respuesta2.value == "SnakeVenom"){
-		document.getElementById('resultado2').innerHTML = "Correcto +15";
-		document.getElementById("resultado2").style.color = "#139f43";
-		contador = contador +15;
-	}else{
-		document.getElementById('resultado2').innerHTML = "Incorrecto es Snake Venom";
-		document.getElementById("resultado2").style.color = "red";
-	}
-
-	if(respuesta3.value == "no"){
-
-		document.getElementById('resultado3').innerHTML = "Correcto +5";
-		document.getElementById("resultado3").style.color = "#139f43";
-		contador = contador +5;
-	}else{
-		document.getElementById('resultado3').innerHTML = "Incorrecto, no se deveria";
-		document.getElementById("resultado3").style.color = "red";
-	}
-
-	document.getElementById('puntuacion').innerHTML ="Tu puntuacion total es de: "+contador;
+      }else{
+          document.getElementById("respuesta3").innerHTML = "Incorrecto";
+          document.getElementById("respuesta3").style.color = "#fa0202";
+      }
+  }
+  
+  document.getElementById('puntuacion').innerHTML ="Tu puntuacion total es de: "+contador;
+  
 }
 
