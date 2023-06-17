@@ -1,77 +1,176 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trivia</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-<div class="contenido">
-<h1 class="titulo">Trivia Mexicana</h1>
-	
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="titulo">
+        <h2>
+          Hola <span id="usuario"></span> averigua cuanto sabes de de
+          <span class="me">MÉ</span><span class="xi">XI</span
+          ><span class="co">CO</span>?
+        </h2>
+        <br />
+        <h4 class="subtitulo">Sólo tienes 15 segundos para responder</h4>
+      </div>
+      <br />
 
-	<form method="POST" action="">
-		<h2 class="pregunta">Completa el refrán: "Ni tanto que queme al santo ni tanto que no lo..."</h2>
-		<div class="grupos">
-			<label>Ilumine</label>
-			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="Ilumine">
-		</div>
-		<div class="grupos">
-			<label>Alumnbre</label>
-			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="alumnbre">
-		</div>
-		<div class="grupos">
-			<label>Encienda</label>
-			<input type="radio" onclick="verCon('10')" id="resp1" name="resp1" value="Encienda">
-		</div>
-		<div id="resultado1"></div>
-		<br>
+      <h3>¿Quiénes crearon el Himno Nacional Mexicano?</h3>
+      <br />
+      <form <br>
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Jaime Nunó y Josefa Ortiz de Domínguez"
+          />
+          <lavel>Jaime Nunó y Josefa Ortiz de Domínguez</lavel>
+        </div>
 
-		<h2 class="pregunta">¿Cuál de estos animales NO es mexicano?</h2>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Francisco González Bocanegra  y Jaime Nunó"
+          />
+          <lavel>Francisco González Bocanegra y Jaime Nunó</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Laura Fernandez y Carlos Pinto"
+          />
+          <lavel>Laura Fernandez y Carlos Pinto</lavel>
+        </div>
+        <div id="resultado1" class="resultados"></div>
+        <div id="respuesta1"></div>
 
-		<div class="grupos">
-			<label>Ajolote</label>
-			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="Ajolote">
-		</div>
-		<div class="grupos">
-			<label>Quetzal</label>
-			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="quetzal">
-		</div>
-		<div class="grupos">
-			<label>perro Xoloitzcuincle</label>
-			<input type="radio" onclick = "verCon('8')" id="resp2" name="resp2" value="xoloitzcuincle">
-		</div>
+        <br />
+        <h3>¿Cómo se llama este personaje?</h3>
+        <figure>
+          <img
+            src="https://sonorastar.com/wp-content/uploads/2020/10/la-catrina-2.jpg"
+            alt="catrina"
+            width="50%"
+          />
+        </figure>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="Doña flores"
+          />
+          <lavel>Doña flores</lavel>
+        </div>
 
-		<div id="resultado2"></div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="Catrina"
+          />
+          <lavel>Catrina</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="La muerte"
+          />
+          <lavel>La muerte</lavel>
+        </div>
+        <div id="resultado2" class="resultados"></div>
+        <div id="respuesta2"></div>
+        <br />
 
-		<br>
+        <h3>¿Cuál de estos animales NO es mexicano?</h3>
+        <br />
 
-		<h2 class="pregunta">¿Cuál de estos partidos de fútbol se conoce como "el clásico nacional"?</h2>	
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="Ajolote"
+          />
+          <lavel>Ajolote</lavel>
+        </div>
 
-		<div class="grupos">
-			<label>America vz Pumas</label>
-			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="amePum">
-		</div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="xoloitzcuincle"
+          />
+          <lavel>Xoloitzcuincle</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="Quetzal"
+          />
+          <lavel>Quetzal</lavel>
+        </div>
+        <div id="resultado3" class="resultados"></div>
+        <div id="respuesta3"></div>
+        <br />
+        <br />
 
-		<div class="grupos">
-			<label>Pumas vz Chivas</label>
-			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="pumChiv">
-		</div>
+        <button
+          class="botonTrivia"
+          id="btn"
+          onclick="validaMexico();"
+          type="button"
+        >
+          <img
+            src="https://img.wattpad.com/0e8f6b0d1ca0ac5f637aa67d014a9e1642e5fd67/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f30783242355536456556764770413d3d2d313033313033343437392e313636363932303761353465326434313538373131343639323331322e676966"
+            alt=""
+            width="100%"
+          />
+          <br />
+          <h3>Ver resultado</h3>
+        </button>
+      </form>
+      <h1 id="puntuacion"></h1>
+      <br />
+      <a href="index.html">Volver</a>
+      <br />
+      <br />
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+    
+    var verDato = localStorage.getItem("test");
 
-		<div class="grupos">
-			<label>America vz Chivas</label>
-			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="ameChiv">
-		</div>
-		<div id="resultado3"></div>
-		<br>
-	</form>
-	<button id = "verRes"  onclick="result();" class="boton">Ver resultados</button>
-	<h1 id = "puntuacion" class="pregunta"></h1>
-	<a href="index.html"><h1>Volver</h1></a>
-</div>
+    document.getElementById("usuario").innerHTML = verDato;
+    
+    
+    setTimeout(() => {
+      const button = document.getElementById("btn");
 
-</body>
+      button.setAttribute("disabled", "");
+
+      alert("Se te acabó el tiempo :)");
+    }, 15000);
+    
+  </script>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src= "vanilla.js"></script>
