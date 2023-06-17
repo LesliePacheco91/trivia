@@ -1,72 +1,177 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trivia</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-</head>
-<body>
-<div class="contenido">
-<h1 class="titulo">Trivia de licores</h1>
-	
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="titulo">
+        <h2>Hola <span id="usuario"></span> averigua cuanto sabes de series</h2>
+      </div>
+      <h4 class="subtitulo">Sólo tienes 15 segundos para responder</h4>
+      <br />
 
-	<form method="POST" action="">
-		<h2 class="pregunta">Qué país hasta el 2013 consideraba a la cerveza como una bebida no alcohólica</h2>
-		<div class="grupos">
-			<label>Alemania</label>
-			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="alemania">
-		</div>
-		
-		<div class="grupos">
-			<label>Portugal</label>
-			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="portugal">
-		</div>
-		<div class="grupos">
-			<label>Rusia</label>
-			<input type="radio" onclick="verCon('12')" id="resp1" name="resp1" value="rusia">
-		</div>
-		<div id="resultado1"></div>
-		<br>
+      <h3>¿Cómo se llama esta actriz?</h3>
+      <br />
+      <form <br>
+        <figure>
+          <img
+            src="https://cdn-3.expansion.mx/dims4/default/26e3a06/2147483647/strip/true/crop/1000x627+0+0/resize/1200x752!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6d%2Fa7%2F4fb9bd0a475a913cc0c66553ef1d%2Femiliaclarke-got-daenerys.jpg"
+            alt=""
+            width="50%"
+          />
+        </figure>
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Emilia Clarke"
+          />
+          <lavel>Emilia Clarke</lavel>
+        </div>
 
-		<h2 class="pregunta">¿Cuál es la cerveza más fuerte del mundo?</h2>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Elizabeth Olsen"
+          />
+          <lavel>Elizabeth Olsen</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p1"
+            value="Jennifer Lawrence"
+          />
+          <lavel>Jennifer Lawrence</lavel>
+        </div>
+        <div id="resultado1" class="resultados"></div>
+        <div id="respuesta1"></div>
 
-		<div class="grupos">
-			<label>Tiger Venom</label>
-			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="TigerVenom">
-		</div>
-		<div class="grupos">
-			<label>Snake Venom</label>
-			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="SnakeVenom">
-		</div>
-		<div class="grupos">
-			<label>Snake Power</label>
-			<input type="radio" onclick = "verCon('15')" id="resp2" name="resp2" value="SnakePower">
-		</div>
+        <br />
+        <h3>¿Cuál es el nombre de este personaje?</h3>
+        <figure>
+          <img
+            src="https://www.fmdos.cl/wp-content/uploads/2018/08/img_2337.jpg"
+            alt=""
+            width="50%"
+          />
+        </figure>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="Doris"
+          />
+          <lavel>Doris</lavel>
+        </div>
 
-		<div id="resultado2"></div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="Anne"
+          />
+          <lavel>Anne</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p2"
+            value="Janice"
+          />
+          <lavel>Janice</lavel>
+        </div>
+        <div id="resultado2" class="resultados"></div>
+        <div id="respuesta2"></div>
+        <br />
 
-		<br>
+        <h3>¿Cuál de estas producciones NO es de Tim Burton?</h3>
+        <br />
 
-		<h2 class="pregunta">¿Es recomendable mezclar bebidas alcohólicas con bebidas energizantes?</h2>	
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="Merlina"
+          />
+          <lavel>Merlina</lavel>
+        </div>
 
-		<div class="grupos">
-			<label>Si</label>
-			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="si">
-		</div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="Frankenweenie"
+          />
+          <lavel>Frankenweenie</lavel>
+        </div>
+        <br />
+        <div class="grupo">
+          <input
+            type="radio"
+            name="p3"
+            value="Coraline"
+          />
+          <lavel>Coraline</lavel>
+        </div>
+        <div id="resultado3" class="resultados"></div>
+        <div id="respuesta3"></div>
+        <br />
+        <br />
 
-		<div class="grupos">
-			<label>No</label>
-			<input type="radio" onclick = "verCon('5')" id="resp3" name="resp3" value="no">
-		</div>
-		<div id="resultado3"></div>
-		<br>
-	</form>
-	<button id = "verRes"  onclick="result1();" class="boton">Ver resultados</button>
-	<h1 id = "puntuacion" class="pregunta"></h1>
-	<a href="index.html"><h2>Volver</h2></a>
-</div>
-</body>
+        <button
+          class="botonTrivia"
+          id="btn"
+          onclick="validaSeries();"
+          type="button"
+        >
+          <img
+            src="https://img.wattpad.com/0e8f6b0d1ca0ac5f637aa67d014a9e1642e5fd67/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f30783242355536456556764770413d3d2d313033313033343437392e313636363932303761353465326434313538373131343639323331322e676966"
+            alt=""
+            width="100%"
+          />
+
+          <br />
+          <h3>Ver resultados</h3>
+        </button>
+      </form>
+      <h1 id="puntuacion"></h1>
+      <br />
+      <a href="index.html">Volver</a>
+      <br />
+      <br />
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+    
+    var verDato = localStorage.getItem("test");
+
+    document.getElementById("usuario").innerHTML = verDato;
+
+    setTimeout(() => {
+      const button = document.getElementById("btn");
+      button.setAttribute("disabled", "");
+
+      alert("Se te acabó el tiempo :)");
+    }, 15000);
+    
+  </script>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src= "vanilla.js"></script>
